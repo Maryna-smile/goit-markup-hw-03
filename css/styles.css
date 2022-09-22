@@ -27,7 +27,15 @@ body {
 }
 
 /* Шапка */
+
+.header-item .logo-flex {
+  margin-bottom: 0;
+}
+
 .page-header {
+  display: flex;
+  align-items: center;
+
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -45,6 +53,7 @@ body {
 }
 
 /* logo */
+
 .logo-item {
   display: block;
   margin-right: 93px;
