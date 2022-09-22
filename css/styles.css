@@ -2,14 +2,15 @@
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --color-of-efect: #2196f3;
-  --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --hero-bg-color: #2F303A;
+  --white: #ffffff;
+  --black: #000000;
 }
 
 body {
-  background-color: var(--primary-bg-color);
+  background-color: var(--white);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -44,29 +45,29 @@ body {
 }
 
 /* logo */
+.logo-item {
+  display: block;
+  margin-right: 93px;
+  margin-bottom: 20px;
 
-.logoWeb {
   color: var(--color-of-efect);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logoStudio {
-  color: #000000;
+  color: var(--black);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 
-.logo-footer {
-  margin-bottom: 20px;
-}
-
 .logoStudio-footer {
-  color: #ffffff;
+  color: var(--white);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -80,6 +81,10 @@ body {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .link-design {
   text-decoration: none;
   font-weight: 500;
@@ -89,9 +94,6 @@ body {
   color: var(--secondary-text-color);
 }
 
-.logo-item {
-  margin-right: 93px;
-}
 
 /* навігація */
 .nav {
@@ -156,7 +158,7 @@ body {
   margin-right: auto;
   width: 696px;
 
-  color: #ffffff;
+  color: var(--white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -169,7 +171,8 @@ body {
   display: inline-block;
   padding: 10px 32px;
 
-  color: #ffffff;
+
+  color: var(--white);
   background-color: var(--color-of-efect);
   font-weight: 700;
   font-size: 16px;
@@ -179,7 +182,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
-
+  letter-spacing: 0.06em;
 }
 
 /* Секції */
@@ -189,7 +192,6 @@ body {
 
 .features {
   display: flex;
-  justify-content: space-between;
 }
 
 .features .item:not(:last-child) {
@@ -253,7 +255,7 @@ body {
 }
 
 .teams-card {
-  background: #FFFFFF;
+  background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -290,22 +292,31 @@ p {
 }
 
 .footer-address {
-  color: #ffffff;
+  display: block;
+
+  color: var(--white);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.5;
   text-decoration: none;
 }
 
 .footer-contact {
+  display: block;
+
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.5;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 .address-style {
   font-style: normal;
-  line-height: 1.7;
+  line-height: 1.5;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* сторінка №2 portfolio */
@@ -327,9 +338,8 @@ p {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bg-color);
   color: var(--secondary-text-color);
-  background: #F5F4FA;
   border-radius: 4px;
   border: transparent;
 
@@ -340,14 +350,7 @@ p {
 
 .button-porfolio:hover {
   background-color: var(--color-of-efect);
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  display: inline-block;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  border: transparent;
-  padding: 6px 25px;
-  cursor: pointer;
+  color: var(--white);
 }
 
 .project-name h2 {
@@ -359,7 +362,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.88;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 /* Приклади робіт */
@@ -382,4 +385,5 @@ p {
   padding: 20px 24px;
 
   border: 1px solid #EEEEEE;
+  border-top: none;
 }
